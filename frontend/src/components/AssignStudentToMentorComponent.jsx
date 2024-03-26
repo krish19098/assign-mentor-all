@@ -4,7 +4,7 @@ import axios from "axios";
 const AssignStudentToMentorComponent = () => {
   const handleAssignStudentToMentor = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/students", {
+      const response = await axios.post("http://localhost:5000/students", {
         /* data */
       });
       console.log("Response:", response.data);
