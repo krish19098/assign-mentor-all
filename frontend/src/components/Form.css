@@ -1,0 +1,30 @@
+/* src/components/Form.css */
+
+.form-component {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-component input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-component button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-component button:hover {
+  background-color: #0056b3;
+}
