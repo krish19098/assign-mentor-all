@@ -13,7 +13,7 @@ const ShowPreviousMentorForStudentComponent = () => {
   const handleGetPreviousMentorForStudent = async () => {
     try {
       const response = await axios.get(
-        `http://assign-mentor-fnx2.onrender.com/students/${studentId}/previous-mentor`
+        `https://assign-mentor-all.onrender.com/students/${studentId}/previous-mentor`
       );
       setPreviousMentor(response.data.mentor); // Assuming the mentor data is nested under 'mentor' key
       setError("");

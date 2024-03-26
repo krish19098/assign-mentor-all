@@ -14,7 +14,7 @@ const ShowStudentsForMentorComponent = () => {
   const handleGetStudentsForMentor = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/mentors/${mentorId}/students`
+        `https://assign-mentor-all.onrender.com/mentors/${mentorId}/students`
       );
       setStudents(response.data.students); // Update to access the students array
       setError("");
