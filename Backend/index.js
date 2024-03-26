@@ -7,7 +7,8 @@ const cors = require("cors");
 app.use(express.json());
 
 const allowedOrigins = [
-  "http://localhost:3000", // Add other origins if needed
+  "https://neon-chaja-dd878a.netlify.app/",
+  /\.netlify\.app$/, // Add other origins if needed
 ];
 
 const corsOptions = {

@@ -4,9 +4,12 @@ import axios from "axios";
 const AssignStudentToMentorComponent = () => {
   const handleAssignStudentToMentor = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/students", {
-        /* data */
-      });
+      const response = await axios.post(
+        "https://assign-mentor-all.onrender.com/students",
+        {
+          /* data */
+        }
+      );
       console.log("Response:", response.data);
     } catch (error) {
       console.error("Error:", error);

@@ -8,7 +8,9 @@ const MentorList = () => {
   useEffect(() => {
     const fetchMentors = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/mentors");
+        const response = await axios.get(
+          "https://assign-mentor-all.onrender.com/mentors"
+        );
         setMentors(response.data);
       } catch (error) {
         console.error("Error fetching mentors:", error);
