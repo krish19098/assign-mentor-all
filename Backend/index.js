@@ -6,22 +6,8 @@ const cors = require("cors");
 
 app.use(express.json());
 
-const allowedOrigins = [
-  "https://neon-chaja-dd878a.netlify.app/",
-  /\.netlify\.app$/, // Add other origins if needed
-];
-
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-};
-
-app.use(cors(corsOptions));
+// Simplified CORS configuration allowing all origins
+app.use(cors());
 
 mongoose.connect(
   "mongodb+srv://gk1481998:gk1481998@cluster0.0bqfw2w.mongodb.net/mentorstudent?retryWrites=true&w=majority",

@@ -5,7 +5,7 @@ const AssignStudentToMentorComponent = () => {
   const handleAssignStudentToMentor = async () => {
     try {
       const response = await axios.post(
-        "https://assign-mentor-all.onrender.com/students",
+        "https://assign-mentor-all-1.onrender.com/students",
         {
           /* data */
         }
